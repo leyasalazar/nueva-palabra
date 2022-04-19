@@ -1,0 +1,81 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  background-image: linear-gradient(rgba(199, 48, 40, 0.548), #a696713a 90%, rgba(199, 48, 40, 0.548) 100%),
+                  url("../img/libros.jpeg");
+  background-size: cover;
+  height: 100vh;
+}
+div{
+  margin: 0 15%;
+  min-height: 60vh;
+  border-radius: 38px;
+  background: #ffffffe5;
+  box-shadow:  26px 26px 61px #858585,
+             -26px -26px 61px #ffffff67;
+}
+h1{
+  font-weight: 700;
+  font-size: 80px;
+  color: white;
+  margin-bottom: 1%;
+}
+h2{
+  padding: 3% 0 1%;
+}
+h3{
+  text-align: left;
+  padding: 0 5% 5%;
+  font-weight: 400;
+}
+/* From uiverse.io by @Voxybuns */
+button {
+  /* Variables */
+ --button_radius: 0.75em;
+ --button_color: #e8e8e8;
+ --button_outline_color: rgba(199, 48, 40, 0.777);
+ font-size: 17px;
+ font-weight: bold;
+ border: none;
+ border-radius: var(--button_radius);
+ background: var(--button_outline_color);
+ margin: 15px 0;
+}
+
+.button_top {
+ display: block;
+ box-sizing: border-box;
+ border: 2px solid var(--button_outline_color);
+ border-radius: var(--button_radius);
+ padding: 0.75em 1.5em;
+ background: var(--button_color);
+ color: var(--button_outline_color);
+ transform: translateY(-0.2em);
+ transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+  /* Pull the button upwards when hovered */
+ transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+  /* Push the button downwards when pressed */
+ transform: translateY(0);
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
